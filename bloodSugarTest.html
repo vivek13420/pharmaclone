@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c1fd52a953.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Blood Sugar test</title>
+    <link rel="stylesheet" href="C:\Users\govind\Desktop\PharmaPage\bloodSugarTest.css" />
+    
+<body>
+    
+<div id="Container">
+    <div>
+<h3 class="H3">Test Details</h3>
+<img class="img1" src="https://cms-contents-staging.pharmeasy.in/banner/1d52ece78b6-Group16361.png?dim=590x100&dpr=1&q=100" alt="">
+
+<!-- div bos  -->
+<div class="Div1">
+
+<div class="FBS1">
+    
+<img src="https://assets.pharmeasy.in/web-assets/dist/6b3d644c.svg" alt="">
+
+</div>
+<div class="FBS2">
+    <h3>Fasting Blood Sugar (FBS)</h3>
+    <h3>&#8377 199 </h3>
+    <p >  <span>&#8377 199</span>       save60</p>
+    <p >Selected From PharmEasy Labs(Thyrocare Powerd) </p>
+    <button onclick="">selected </button>
+    <button onclick="">Remove</button>
+</div>
+
+
+
+</div>
+<span class="s1 " onclick="para()">Description </span>  <span class="s1" onclick="requirements()">Test requirements</span>
+<p id="paratext"></p>
+
+
+ 
+</div>
+</div>
+
+
+<div></div>
+
+<!-- down section    -->
+
+</body>
+</html>
+
+<script>
+    
+    function requirements(){
+        document.querySelector("#paratext").innerText=""
+        document.querySelector("#paratext").innerText="Sample Type Blood  "+ "\n" +
+                "Fasting Required: 10-12 Hrs" ;
+                   
+                // document.querySelector("#paratext").innerText=
+                // "Fasting Required: 10-12 Hrs"              
+    }
+
+function para(){
+    document.querySelector("#paratext").innerText=""
+    document.querySelector("#paratext").innerText = "The blood sugar fasting test is done eight to ten hours after eating your last meal. It helps detect Prediabetes, Type 1 diabetes, Type 2 diabetes and Gestational diabetes. If your fasting blood sugar levels are above 125 mg/dL, it indicates that you may have diabetes mellitus. The blood sugar fasting test is a blood glucose test that helps determine blood sugar levels in your body after fasting for more than 8 hours. In case a person has diabetes, these levels are high. The result of the blood sugar fasting test will indicate improper pancreatic secretion of insulin. In healthy individuals, blood sugar levels drop when there is no glucose intake through food. In case of fasting or not having meals in a while, blood sugar levels decrease. If you have prediabetes, diabetes or gestational diabetes, your blood sugar fasting test results readings may be high. The blood sugar fasting test can be prescribed for the purpose of screening, diagnosing and monitoring. Screening tests are meant to help in the early diagnosis and prevention of serious health issues. Anyone above 30 should get an annual screening for diabetes. Diagnosing diabetes or prediabetes in adults. For a person prone to diabetes or with any symptoms of high or low blood glucose, blood sugar fasting test results will be helpful in the diagnosis of the condition. Those diagnosed with any type of diabetes, need regular monitoring of fasting blood glucose levels to check for the effectiveness of ongoing treatment, dietary and lifestyle modifications. The blood sugar fasting test is a test that is done by taking your blood sample. This blood sample for the blood sugar test procedure is drawn after 8 to 10 hours of fasting. This test can be accompanied by the Urine Sugar test, HBA1c for diabetes and in some cases, the Lipid Profile Test. "
+
+
+    document.querySelector("#paratext").style.color = "#999ea2"
+}
+
+
+
+</script>

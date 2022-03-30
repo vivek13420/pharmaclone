@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c1fd52a953.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Lab Test</title>
+    <link rel="stylesheet" href="C:\Users\govind\Desktop\PharmaPage\LabTest.css" />
+    
+
+
+
+
+
+
+</head>
+<style>
+   
+</style>
+<body>
+    <div id="Healthcontainer">
+        <div id="div1">
+            <div id="div1-1st">
+                <img id="pharmeasyimg" src="https://pharmeasy.in/_next/image?url=%2Ficons%2Fpharmeasy-logo-white.png&w=256&q=75"/>
+            </div>
+            <div id="div1-2nd">
+                <select id="selectpin">
+                    <option value="pincode">Select Pincode</option>
+                </select>
+
+                <input id="search" type="search" value="" placeholder=" Search medicines/Healthcare Products @ 18% off">
+            </div>
+        </div>
+
+
+        <div id="div2">
+            <div id="div2-1st">
+                <a href="" >Order Medicines</a>
+                <a href="" >Healthcare Products</a>
+                <a href="" >Order Medicines</a>
+            </div>
+            <div id="div2-2nd">
+                <a  id="offers"href="" >Offers</a>
+                <a id="login" href="" >Login </a>
+                <a id="signup" href="" >/ Signup</a>
+                <a id="cart" href="" >cart</a>
+            </div>
+        </div>
+
+    </div>
+
+<!-- div for upper image -->
+<div id="upperImg">
+<div><img src="https://cms-contents.pharmeasy.in/banner/74cf75269c2-06_HbA1c_Cat_696x301.jpg" alt="LabTest image"></div>
+<div><img src="https://cms-contents.pharmeasy.in/banner/be77aa3bed9-08_Advanced-Full-Body-Checkup_Cat_696x301_96.jpg" alt="LabTest image"></div>
+
+</div>
+<!-- 4 button div for next website -->
+<div id="button4">
+    <div>
+   <a href=""><img src="https://assets.pharmeasy.in/web-assets/dist/6b3d644c.svg" alt="logo1"></a> 
+    <p>   All Test  </p> 
+    </div>
+    <div>
+        <a href=""><img src="https://assets.pharmeasy.in/web-assets/dist/dea295a0.svg" alt="logo2"></a> 
+        <p>Health <br>Packages</p> 
+    </div>
+    <div>
+        <a href=""><img src="https://assets.pharmeasy.in/web-assets/dist/d4d62fbf.svg" alt="logo3"></a> 
+        <p>Upload <br> Prescription</p> 
+    </div>
+    <div>
+        <a href=""><img src="https://assets.pharmeasy.in/web-assets/dist/4ed59722.svg" alt="logo4"></a> 
+        <p>Book On Call</p> 
+    </div>
+</div>
+<div id="Plus">
+    <img src="https://assets.pharmeasy.in/web-assets/dist/3864b471.svg" alt="logo1">
+    <p>Save  flat 5% extra on medicines & enjoy FREE delivery with Plus membership</p>
+</div>
+<!-- pending div -->
+<P class="resentSerch">Recently Searched By You</P>
+<div id="recentSerchJava">
+    
+<div>
+    <a href=""> 
+    <img src="https://assets.pharmeasy.in/web-assets/dist/6b3d644c.svg" alt="">  
+    <h3>Fasting Blood Sugar (FBS)</h3>
+    <p>Available at 1 certified lab</p>
+   <p class="rupee">&#8377 199 <span>onwards</span></p>  </a>
+</div>  
+
+<div>
+    <a href="">
+    <img src="https://assets.pharmeasy.in/web-assets/dist/dea295a0.svg" alt="">
+    <h3>Post Prandial Blood Sugar</h3>
+    <p>Available at 1 certified lab</p>
+   <p class="rupee rupee1">&#8377 700<span>onwards</span></p> </a>
+
+</div>
+<div> 
+    <a href="">
+    <img src="https://assets.pharmeasy.in/web-assets/dist/6b3d644c.svg" alt="">
+    <h3>Covid-19 RTPCR</h3>
+    <h3>(Coronavirus SARS - CoV2)</h3>
+    <p>Available at 1 certified lab</p>
+   <p class="rupee rupee1 ">&#8377 999 <span>onwards</span></p> </a>
+</div>
+<div>
+    <a href="">
+    <img src="https://assets.pharmeasy.in/web-assets/dist/dea295a0.svg" alt="">
+    <h3>Advanced Full Body Checkup</h3>
+    <p>Available at 1 certified lab</p>
+   <p class="rupee  rupee1">&#8377 999<span>onwards</span></p> </a>
+</div>
+</div>
+<!-- ------------------ -->
+<!-- pending div -->
+<!-- <P class="HealthPackages1">Certified Partner Labs</P>
+<div id="HealthPackages" >
+    <div> 
+        
+        <img src="data:image/png;base64,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" alt="">
+        <h3>Thyrocare (Covid RTPCR)</h3>
+        <p>NABL CAP Certified</p>
+    
+    </div>
+    <div >
+    <div > 
+       
+        <img class="img1" src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt="">
+        <h3>PharmEasy Labs (Thyrocare powered)</h3>
+        <p>Certified</p> </a> 
+    </div> 
+</div> -->
+<!-- ------------------ -->
+<p class="aff">Affordable Health Packages</p>
+<div id="recentSerchJava1">
+    <div>
+        <a href="">
+            <img src="https://assets.pharmeasy.in/web-assets/dist/dea295a0.svg" alt="">
+            <h3>Advanced Full Body Checkup</h3>
+            <p>Available at 1 certified lab</p>
+           <p class="rupee  rupee1">&#8377 999<span>onwards</span></p> </a>
+    </div>
+    <div>
+        <a href="">
+            <img src="https://assets.pharmeasy.in/web-assets/dist/dea295a0.svg" alt="">
+            <h3> Post Prandial Blood Test</h3>
+            <p>Available at 1 certified lab</p>
+           <p class="rupee  rupee1">&#8377 999<span>onwards</span></p> </a>
+    </div>
+    <div>
+        <a href="">
+            <img src="https://assets.pharmeasy.in/web-assets/dist/dea295a0.svg" alt="">
+            <h3>Advanced Renal Package</h3>
+            <p>Available at 1 certified lab</p>
+           <p class="rupee  rupee1">&#8377 999<span>onwards</span></p> </a>
+    </div>
+    <div>
+        <a href="">
+            <img src="https://assets.pharmeasy.in/web-assets/dist/dea295a0.svg" alt="">
+            <h3>Alcohol Impact Checkup</h3>
+            <p>Available at 1 certified lab</p>
+           <p class="rupee  rupee1">&#8377 999<span>onwards</span></p> </a>
+    </div>
+</div>
+
+<!-- This is paragraph section  -->
+<div id="para">
+    <p class="bold">The (Pharm)Easy Way To Book Lab Tests Online</p>
+    <br>
+    <p class="c1">Book Diagnostics Lab Test Online. Get doorstep sample collection</p> <br>
+    <p  class="bold  ">Lab Test Booking Made Simple</p>
+    <p class="c1">One of the most popular services PharmEasy offers is diagnostic testing. People need to book pathological tests for many reasons. But before booking, they wonder if the   <strong> diagnostic centre </strong>can be trusted to produce accurate results and how long they might have to wait in a queue to get tested.</p><br>
+    <p class="c1">To bypass these hassles, PharmEasy has set up an extensive network of reputed <strong>pathological laboratories</strong>  in India. One such lab is Thyrocare. With Thyrocare on board, we can give you access to a wide network of diagnostic laboratories.We also offer a <strong>home collection of samples </strong>as well . Bid adieu to anxious days of wondering where to book diagnostic tests and embrace the PharmEasy way.</p> <br>
+    <p class="bold">Lab tests at your doorstep</p> <br>
+    <p class="c1">To ease your anxieties, PharmEasy offers the facility of doorstep collection. The technician will come to your house to collect samples. And all safety precautions are maintained. A fresh collection kit and/or needle will be used so that there is no contamination of samples of the spread of diseases. We use special ice boxes that meet NABL guidelines to transport your samples. The reports will be sent to you online. That means you won’t have to travel to the diagnostic lab to collect your reports.</p> <br>
+    <p class="bold">How can you book diagnostic tests online?</p>
+    <br>
+    <ul>Booking a test on PharmEasy is simple</ul> <br>
+    <li class="c1">Visit https://pharmeasy.in/diagnostics or click on Lab Tests on the PharmEasy website or app.</li>
+    <li class="c1">Upload your prescription or choose the lab test from the search box.</li>
+    <li class="c1">Alternatively, you can call our customer service team on 7022000900 and they will make the booking for you</li> <br>
+    <p  class="bold">Looking to book a pathology test? Here’s how PharmEasy can help!</p> <br>
+    <p class="c1">Online diagnostic tests work as smoothly as clockwork. Once you’ve booked the <strong>pathology test </strong>  you need with the  <strong>diagnostic centre </strong> you prefer, you will get a confirmation on your registered e-mail id and SMS. The backend support team might also call you to confirm the booking.Post this our expert technician will arrive at your place at the selected slot and collect your sample for processing at our state of the art labs. Reports will be shared with you over SMS and will also be available in your account on app/web.</p>
+    <p class="bold">Why choose PharmEasy to book lab tests?</p><br>
+    <ul>We can give you reasons galore for choosing PharmEasy-</ul> <br>
+    <li class="c1">2 Lac+ happy customers</li>
+    <li class="c1">Safe home sample collection</li>
+    <li class="c1">Up to 70% OFF</li>
+    <li class="c1">Certified & 100% Automated labs</li>
+    <li class="c1">Timely and accurate reports</li>
+    <li class="c1">500+ tests and health packs to choose from</li>
+   <br>
+
+   <p class="c1">Now that you know why PharmEasy can be your trusted diagnostic test booking partner, don’t wait, download the PharmEasy app today and book a health check right away.</p>
+   <br>
+   <!-- Frequently asked question section  -->
+<p class="bold">Frequently Asked Questions</p>
+<div id="freq">
+    <p class="bold">what are the covid precautions PharmaEasy is taking for the testing purpose?</p>
+    <br>
+    <p class="c1">PharmEasy takes safety of our patients and staff very seriously. Which is why since the onset of COVID-19, we formulated a 5-step safety program to offer 100% protection to all stakeholders.. Along with this, NABL guidelines are followed to ensure samples are not corrupted during collection, transportation or storage. Here are the safety measures that we adhere to-Vigilance about face masksHand hygiene including sanitization and wearing of glovesFrequent thermal checksHygienic sample collectionCareful disposal of wasteCheck flu symptoms with patients</p>
+</div>
+<div id="freq">
+    <p class="bold">Are the phlebotomists sufficiently qualified?</p>
+    <br>
+    <p class="c1">PharmEasy owns 18 state-of-the-art diagnostic laboratories in the country with an inhouse fleet of 500 phlebotomists across 2500+ pincodes. We have a dedicated training team for the technicians which constantly track their performance on parameters like on time arrival, painless collection, adherence to NABL guidelines for sample storage & transport and customer support. We have a very strict hiring process which ensures that every sample collection experience is best in class.</p>
+</div>
+<div id="freq">
+    <p class="bold">How efficient is the sample collection  and aanalysis process?</p>
+    <br>
+    <p class="c1">Utmost care is taken to collect samples while maintaining complete hygiene. Only new and fresh collection kits and needles are used. After collection, the sample is immediately transferred into an icebox to prevent degradation and bacterial build-up which may lead to inaccurate diagnosis. The samples are barcode tagged to prevent mix up and in the laboratories, technicians use high-end, state-of-the-art devices to analyse the samples.</p>
+</div>
+<div id="freq">
+    <p class="bold">Why are lab tests essential?</p>
+    <br>
+    <p class="c1">Lab tests or diagnostic tests are recommended by doctors when they suspect that there might be something wrong with your health. Samples of your blood, stool, urine, or mucus can reveal a lot about the state of your health when analysed with special devices. Once the problem is detected, your doctor can diagnose and put you on medication or suggest a course of treatment.</p>
+</div>
+<div id="freq">
+    <p class="bold">How long does it take for the report to be delivered?</p>
+    <br>
+    <p class="c1">It takes 24-48 hours for the lab to prepare your report and have it delivered to you.</p>
+</div>
+<div id="freq">
+    <p class="bold">How should one prepare for a lab test?</p>
+    <br>
+    <p class="c1">Different tests have different requirements. Some may need to be on an empty stomach whereas, for some other tests, you may need to consume food before the sample is collected. Speak with your doctor regarding what you need to do to prepare for a lab test. Let your doctor know if you are already on any medication.</p>
+</div>
+<div id="freq">
+    <p class="bold">How are lab test reports interpreted?</p>
+    <br>
+    <p class="c1">The reports that our labs will deliver to you will be quite detailed. There will be charts of reference ranges to help you understand the report and a statement from a qualified doctor. But, once you receive your report, it is best to consult your doctor and ask him/her to explain it to you.</p>
+</div>
+<div id="freq">
+    <p class="bold">If the lab test results are withing normal range,does that mean no illness has been detected?</p>
+    <br>
+    <p class="c1">If your reports are within normal range, it is certainly good news. But normal results do not always give you a clean bill of health. If symptoms persist, your doctor will recommend other tests to detect what is triggering the unusual signs.</p>
+</div>
+<!-- frequently ask section end -->
+
+<!-- logo section1 start here -->
+<div id="logoSection1">
+    <div>
+        <img src="https://cdn01.pharmeasy.in/dam/diagnostics/usp-images/e916484d3a2336368ce2ecf1748437e2" alt=""> <br>
+        <p class="bold">Convenience</p> <br>
+        <p class="c1">Get your samples collected at the comfort of your home.</p><br>
+    </div>
+    <div>
+        <img src="https://cdn01.pharmeasy.in/dam/diagnostics/usp-images/55f90440a9873704a771d084cb65b909" alt=""> <br>
+        <p class="bold">Accurate Reports</p><br>
+        <p class="c1">Get accurate and timely reports from our Certified Partner Laboratories.</p><br>
+    </div>
+</div>
+
+    <!-- logo section1 end here -->
+
+    <!-- logo section2 start here -->
+    <div id="logoSection2">
+        <div>
+            <img src="https://assets.pharmeasy.in/web-assets/dist/9407515b.svg?dim=0x72&dpr=1&q=100" alt="">
+            <h3>Trusted Labs</h3><br><br>
+            <p class="c1">Every test booked via PharmEasy is conducted by certified labs that are 100% verified and trustworthy.</p>
+        </div>
+        <div>
+            <img src="https://assets.pharmeasy.in/web-assets/dist/0105ddc1.svg?dim=0x72&dpr=1&q=100" alt="">
+            <h3>Home Visit</h3><br><br>
+            <p class="c1">With PharmEasy, you get a FREE sample pick-up* by professional phlebotomists from your home or preferred location.</p>
+        </div>
+        <div>
+            <img src="https://assets.pharmeasy.in/web-assets/dist/fc71c500.svg?dim=0x72&dpr=1&q=100" alt="">
+            <h3>Timely and Accurate Reports</h3><br><br>
+            <p class="c1">Once collected, samples will be sent to labs for processing. Detailed reports will be shared within a stipulated timeline.</p>
+        </div>
+        <div>
+            <img src="https://assets.pharmeasy.in/web-assets/dist/4a11ac5a.svg?dim=0x72&dpr=1&q=100" alt="">
+            <h3>Up to 70% OFF</h3><br><br>
+            <p class="c1">At PharmEasy, you save at every step! On diagnostic tests, get up to 70% OFF on various tests and test packages.</p>
+        </div>
+    </div>
+
+
+</div>
+ <!-- logo section2 end  here -->
+ <!-- logo section3 start   here -->
+ <div id="logoSection3">
+     <div>
+         <img class="size" src="https://assets.pharmeasy.in/web-assets/dist/34a16ae8.jpg" alt="">
+     </div>
+     <div>
+        <div>
+            <p>Download the App for Free</p>
+        </div>
+        <div id="playStore">
+            <a href="www.playstore.com">
+            <button class="btn1" > <img src="https://assets.pharmeasy.in/web-assets/dist/3380aedc.png" alt=""> <span>Google Play</span></button> </a>
+
+            <a href="">
+            <button class="btn1"><img src="https://assets.pharmeasy.in/web-assets/dist/9bf5c576.png" alt=""> <span>App Store</span></button>  </a>
+        </div>
+     </div>
+ </div>
+<!-- logo section3 end    here -->
+
+<!-- footer section start here -->
+<div id="footersection">
+    <div id="footerbox">
+    <div> 
+        <p class="bold">Company</p>
+        <br>
+       
+        <p> <a href=""> About Us</a></p>
+        <br>
+        <p> <a href=""> Carreers</a></p>
+        <br>
+        <p> <a href=""> Blog</a></p>
+        <br>
+        <p> <a href="">Partner with PharmEasy</a></p>
+        <br>
+        <p> <a href=""> Sell at PharmEasy</a></p>
+    </div>
+    <div>
+        <p class="bold">Our Services</p>
+        <br>
+        <p> <a href=""> Order Medicine </a></p>
+        <br>
+        <p> <a href=""> Healthcare Products</a></p>
+        <br>
+        <p> <a href=""> Lab Tests</a></p>
+        <br>
+        <p class="bold">Need Help</p>
+        <br>
+        <p> <a href=""> Browse All Medicines</a></p>
+        <br>
+        <p> <a href=""> Browse All Molecules</a></p>
+        <br>
+        <p> <a href=""> Browse All Cities & Areas</a></p>
+        <br>
+        <p> <a href=""> FAQs</a></p>
+        <br>
+
+    </div>
+    <div>
+        <p class="bold"> Policy Info</p>
+        <br>
+        <p> <a href=""> Editorial Policy</a></p>
+        <br>
+        <p> <a href=""> Privacy Policy</a></p>
+        <br>
+        <p> <a href=""> Vulnerability Disclosure Policy</a></p>
+        <br>
+        <p><a href=""> Terms and Conditions</a> </p>
+        <br>
+        <p> <a href=""> Customer Support Policy</a></p>
+        <br>
+        <p> <a href=""> Return Policy</a></p>
+    </div>
+    <div >
+        <p>Follow Us</p>
+        <!-- <span ><i class="fa-brands fa-instagram"></i></span>
+        <span > <i class="fa-brands fa-instagram"></i></span>
+        <span> </span>
+        <span class="black"> <i class="fa-brands fa-instagram"> </i> </span>
+        <i class="fas fa-band-aid"></i> -->
+        <div class="font">
+            <a href="">  <i class="fa-brands fa-instagram-square"></i></a>
+      <a href=""> <i class="fa-brands fa-facebook"></i></a>
+      <a href=""> <i class="fa-brands fa-youtube"></i></a>
+      <a href="">  <i class="fa-brands fa-twitter"></i></a>
+     </div>
+    </div>
+</div>
+</div>
+
+
+</body>
+</html>
