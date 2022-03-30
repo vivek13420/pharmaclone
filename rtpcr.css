@@ -1,0 +1,153 @@
+body{
+  width:60%;
+  margin :auto;
+}  
+*{
+  font-family: sans-serif;
+}
+#container1{
+  height:260px;
+  width:60%;
+  border:1px solid black; 
+ border-radius: 5px;
+cursor:pointer;
+}
+.box{
+  margin-top:20px;
+  margin-left:20px;
+ 
+}
+
+.box img{
+  height:40px;
+  width:40px;
+  margin-right:10px;
+  
+}
+.box h2{
+  /* margin-top:20px; */
+  margin-right:2px;
+  font-size: 26px;
+  font-family:sans-serif;
+  font-weight: 700;
+  line-height: 36px;
+  color:#4f585e;
+ 
+}
+.box p{
+  margin-left:50px;
+  font-family:sans-serif;
+  margin-bottom:-20px;  
+  font-weight: 400;
+  font-size: 12px;
+  line-height:18px;
+  color: #4f585e
+}
+.box h1{
+  margin-left:50px;
+}
+.box button {
+  margin-left:50px;
+  background-color: #10847e;
+  color:white;
+  width:40%;
+  height:40px;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 5px;
+  border:none;
+}
+.box button:hover{
+  cursor:pointer;
+}
+.span1{
+  margin-left:5px;
+ color:#8897a2;
+ font-family:sans-serif;
+ font-weight: 600;
+ font-size:12px;
+}
+
+[data-tab-content] {
+    display: none;
+  }
+  
+  .active[data-tab-content] {
+    display: block;
+  }
+/*   
+  body {
+    padding: 0;
+    margin: 0; 
+  }*/
+  
+  .tabs {
+    display: flex;
+    /* justify-content: space-around; */
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    color:#999ead;
+    /* border-bottom: 1px solid black; */
+  }
+  
+  .tab {
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .tab.active {
+    /* background-color: #CCC; */
+    color:#619785;
+      border-bottom: 3px solid #3bb896 ;
+      border-radius: 0px 
+  }
+  
+  .tab:hover {
+    /* background-color: #AAA; */ 
+    text-underline-position: below;
+
+  }
+  
+  .tab-content {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  #description>p{
+    margin-left:0px;
+    margin-right:350px;
+    font-family: sans-serif;
+    font-weight:400;
+    line-height:24px;
+    color:#646b6f;
+    font-size: 16px;
+  }
+  .grid1_boxes{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    border:1px solid black;
+    gap:25px;
+  }
+  #test>p{
+    font-family: sans-serif;
+    font-weight:400;
+    line-height:24px;
+    color:#4f585e;
+    font-size: 16px;
+  }
+  .span2{
+    font-weight:600;
+    margin-left: 5px;;
+  }
+    
+   
+
+
+
+
+
+
+
+
+
