@@ -1,0 +1,112 @@
+#Container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    border: 1px solid black;
+}
+
+#Container>div{
+    width: 50%;
+    height: auto;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+   
+}
+#Container>div>.H3{
+    margin-left: 100px;
+}
+#Container>div>.img1{
+   margin-left: 100px;
+}
+
+.img1{
+   
+    width: 500px;
+    height: 125px;
+}
+
+#Container>div>.Div1{
+    margin-left: 100px;
+    width: 500px;
+    height: 300px;
+    border: 1px solid blue;
+display: flex;
+    
+    
+
+}
+
+.Div1>.FBS1{
+    width :20%;
+    height: auto;
+    border: 1px solid red;
+}
+.Div1>.FBS1>img{
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+.Div1>.FBS2{
+    width: 80%;
+    height: auto;
+    border: 1px solid black;
+}
+.FBS2>h3{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.FBS2>h3+p>span{
+    text-decoration: line-through;
+    color: #999ea2;
+    font-size: 20px;
+
+   
+}
+.FBS2>p+p{
+   
+    color: #999ea2;
+    font-size: 20px;
+
+}
+.FBS2>p+p+button{
+    background-color: #10847e;
+    width: 48%;
+    height: 50px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.FBS2>p+p+button:hover{
+    color: white;
+}
+.FBS2>p+p+button+button{
+    background-color: #10847e;
+    width: 48%;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.FBS2>p+p+button+button:hover{
+    color: white;
+}
+
+.s1{
+    margin-left: 100px;
+    color: #999ea2;
+    font-size: 20px;
+}
+.s1:hover{
+    color: #10847e ;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+#paratext{
+    margin-left: 100px;
+}
+  
