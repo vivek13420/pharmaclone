@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style> 
+      body{
+    margin: auto;
+}
+#Healthcontainer{
+    width:100%;
+    height:auto;
+    /* border:1px solid red; */
+    background-color: rgb(16,132,126);
+    font-family: sans-serif;
+}
+
+#div1{
+    width:100%;
+    height:70px;
+    /* border:1px solid blue; */
+    display: flex;
+   padding-top: 7px;
+}
+#div1-1st{
+   width:160px;
+   height:60px;
+   /* border:1px solid teal; */
+   margin-top: 5px;
+   margin-left: 10px;
+   margin-bottom: 5px;
+   margin-top: 10px;
+  
+}
+
+#pharmeasyimg{
+   width:100%;
+   height:100%;
+   cursor: pointer;
+}
+
+#div1-2nd{
+   width:850px;
+   height:51px;
+   /* border:1px solid blue; */
+   margin-left: 25px;
+   margin-top: 9px;
+   margin-bottom: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   border-radius: 9px;
+}
+
+#selectpin{
+   height: 50px;
+   width:150px;
+   border:0;
+   
+   border-radius: 9px 0px 0px 9px;
+   font-size: 16px;
+   color: #4f585e;
+   font-weight: 400;
+   padding-left: 5px;    
+}
+#search{
+height: 50px;
+   width:700px;
+   padding-left: 12px;
+   border: 0;
+   border-radius: 0px 9px 9px 0px;
+   font-size: 16px;
+   color: #4f585e;
+   font-weight: 400;
+}
+
+
+
+#div2{
+    width:100%;
+    height:57px;
+    /* border:1px solid blue; */
+    display: flex;
+ align-items: center;
+ /* background-color: rgb(16,132,126); */
+ /* position:relative; */
+
+}
+#div2-1st{
+   width:475px;
+   height:57px;
+   /* border:1px solid teal; */
+   margin-left: 200px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-size: 18px;
+   font-weight: 400;
+
+}
+a{
+   text-decoration: none;
+   color: white;
+}
+.a1:hover{
+   border-bottom: 3px solid white;
+   height: 25px;
+}
+#div2-2nd{
+   width:400px;
+   height:57px;
+   /* border:1px solid red; */
+   margin-left: 300px;
+   display: flex;
+   align-items: center;
+   font-size: 18px; 
+}
+
+#offers{
+   margin-right: 47px;
+}
+
+#login{
+  
+  margin-right: 47px;
+}
+#cart{
+
+  margin-right:25px;
+}
+
+#div2-2nd>img{
+   cursor: pointer;
+}
+
+#div3{
+ width:100%;
+ height:70px;
+ /* border:1px solid red; */
+ display: flex;
+ align-items: center;
+ font-size: 12px;
+ font-family: sans-serif;
+ 
+}
+
+#homeHealthcare{
+   color: black;
+   margin-left: 170px;
+}
+#homeHealthcare+p{
+   margin-left: 15px;
+}
+    
+    </style>
+</head>
+<body>
+    <div id="Healthcontainer">
+        <div id="div1">
+            <div id="div1-1st">
+                <img id="pharmeasyimg" src="https://pharmeasy.in/_next/image?url=%2Ficons%2Fpharmeasy-logo-white.png&w=256&q=75"/>
+            </div>
+            <div id="div1-2nd">
+                <select id="selectpin">
+                    <option value="pincode">Select Pincode</option>
+                </select>
+
+                <input id="search" type="search" value="" placeholder=" Search medicines/Healthcare Products @ 18% off">
+            </div>
+        </div>
+
+
+        <div id="div2">
+            <div id="div2-1st">
+                <a class="a1" href="" >Order Medicines</a>
+                <a class="a1" href="" >Healthcare Products</a>
+                <a class="a1" href="" >Lab Tests</a>
+            </div>
+            <div id="div2-2nd">
+                <img src="offerimg.jpg"/>
+                <a  id="offers"href="" ></i> Offers</a>
+                <img src="loginimg.jpg"/>
+                <a id="login" href="" > Login / Signup </a>
+                <img src="cartimg.jpg"/>
+                <a id="cart" href="" >cart</a>
+            </div>
+        </div>
+
+    </div>
+    <div id="hidden"></div>
+
+    <div id="div3">
+        <a id="homeHealthcare" href="home.html">Home</a>
+        <p> >  Healthcare</p>
+    </div>
+</body>
+</html>
