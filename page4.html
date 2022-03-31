@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="page3.css">
+    <link rel="stylesheet" href="bloodSugarTest.css" />
+    
+</head>
+<body>
+    <div id="container">
+        <div>
+<h2 class="H2">Test Deatails</h2>
+
+<img class="img1" src="https://cms-contents-staging.pharmeasy.in/banner/1d52ece78b6-Group16361.png?dim=590x100&dpr=1&q=100" alt="">
+
+<div id="div1">
+    <!-- <span class="a1">Popular choice</span><br> -->
+    <img  class="FBS1 heartLogo" src="https://assets.pharmeasy.in/web-assets/dist/6b3d644c.svg" alt=""> <span class="s2">Fasting Blood Sugar (FBS)</span><br>
+    <p class="a2">Available at 1 other lab but not at PharmEasy Labs(Thyrocare powered)</p>
+    <span class="a3">&#8377 199 </span>
+    <span class="a4">&#8377 500 </span>
+    <span class="a5"> &nbsp;&nbsp;&nbsp;save 60% &nbsp;&nbsp;&nbsp;</span><br>
+    <div class="a6" >
+    <img class="" src="C:\Users\govind\Desktop\PharmaPage\lab2.png" alt="">
+    <p>Selected from PharmEasy Labs (Thyrocare Powered)</p>
+</div>
+    <!-- <span class="s5">onwards &nbsp;</span> -->
+
+    <!-- <span class="s7">&#8377 500 &nbsp;&nbsp;&nbsp;</span> <span class="s4">&#8377 2684 &nbsp;&nbsp;&nbsp;</span> <span class="s5">save 60% &nbsp;&nbsp;&nbsp;</span><br>
+    <img class="space1" src="C:\Users\govind\Desktop\PharmaPage\img5.png" alt=""><span class="s6">Selected From PharmEasy Labs(Thyrocare &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Powerd)</span> <br> -->
+    <div>
+    <button class="b1">Selected </button> <button class="b2">Remove</button><br>
+    <!-- <img class="space1 s9 " src="https://assets.pharmeasy.in/web-assets/dist/e4dcfc7b.svg" alt=""><span class="s10">Recommended By Health Experts</span> -->
+</div>
+</div >
+
+
+
+
+   
+    
+
+    
+<span class="s1 " onclick="para()">Description </span>  <span class="s1" onclick="requirements()">Test requirements</span>
+<p id="paratext"></p>
+ </div>
+
+ 
+
+ <!-- sencond javascript div -->
+        <div>tttt</div>
+    </div>
+</body>
+</html>
+
+
+<script>
+    
+    function requirements(){
+        var type = "Blood ";
+        var fast = "10-12 Hrs"
+        document.querySelector("#paratext").innerText=""
+
+        document.querySelector("#paratext").innerText="Sample Type :"+type + "\n"+
+                "Fasting Required: "+fast ;
+                   
+                // document.querySelector("#paratext").innerText=
+                // "Fasting Required: 10-12 Hrs"              
+    }
+
+function para(){
+    document.querySelector("#paratext").innerText=""
+    document.querySelector("#paratext").innerText = "The blood sugar fasting test is done eight to ten hours after eating your last meal. It helps detect Prediabetes, Type 1 diabetes, Type 2 diabetes and Gestational diabetes. If your fasting blood sugar levels are above 125 mg/dL, it indicates that you may have diabetes mellitus. The blood sugar fasting test is a blood glucose test that helps determine blood sugar levels in your body after fasting for more than 8 hours. In case a person has diabetes, these levels are high. The result of the blood sugar fasting test will indicate improper pancreatic secretion of insulin. In healthy individuals, blood sugar levels drop when there is no glucose intake through food. In case of fasting or not having meals in a while, blood sugar levels decrease. If you have prediabetes, diabetes or gestational diabetes, your blood sugar fasting test results readings may be high. The blood sugar fasting test can be prescribed for the purpose of screening, diagnosing and monitoring. Screening tests are meant to help in the early diagnosis and prevention of serious health issues. Anyone above 30 should get an annual screening for diabetes. Diagnosing diabetes or prediabetes in adults. For a person prone to diabetes or with any symptoms of high or low blood glucose, blood sugar fasting test results will be helpful in the diagnosis of the condition. Those diagnosed with any type of diabetes, need regular monitoring of fasting blood glucose levels to check for the effectiveness of ongoing treatment, dietary and lifestyle modifications. The blood sugar fasting test is a test that is done by taking your blood sample. This blood sample for the blood sugar test procedure is drawn after 8 to 10 hours of fasting. This test can be accompanied by the Urine Sugar test, HBA1c for diabetes and in some cases, the Lipid Profile Test." 
+
+
+    document.querySelector("#paratext").style.color = "#4f585e"
+    document.querySelector("#paratext").style.fontfamily = "sans,sarif"
+}
+
+
+var button1 = document.getElementById("btn1")
+button1.style.color ="#10847e"
+button1.style.cursor ="pointer"
+var list = document.getElementById("list")
+list.style.display="none";
+button1.addEventListener("click",(event)=>{
+    if(list.style.display=="none"){
+        list.style.display="block";
+    }else{
+        list.style.display="none";
+    }
+})
+
+function dropfunction(){
+ 
+
+}
+
+</script>

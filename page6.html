@@ -1,0 +1,124 @@
+
+<!-- Advanced Full Body Checkup with Covid Antibody -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="page5.css">
+    <link rel="stylesheet" href="bloodSugarTest.css" />
+    
+</head>
+<body>
+    <div id="container">
+        <div>
+<h2>Package Deatails</h2>
+
+<img class="img1" src="https://cms-contents-staging.pharmeasy.in/banner/1d52ece78b6-Group16361.png?dim=590x100&dpr=1&q=100" alt="">
+
+<div id="div1">
+    <span class="s3">Popular choice</span><br>
+    <div class="a6">
+    <img  class="FBS1 heartLogo" src="https://assets.pharmeasy.in/web-assets/dist/dea295a0.svg" alt=""> <span class="s2">Advanced Full Body Checkup with Covid Antibody</span> </div> 
+
+    <p class="a7" >Available at PharmEasy Labs(Thyrocare powered)</p>
+
+    <span class="s7">&#8377 1,299 &nbsp;&nbsp;</span> <span class="s4">&#8377 3,490 &nbsp;</span> <span class="s5">save 62% &nbsp;&nbsp;&nbsp;</span><br>
+    
+    
+    <!-- <div class="a6" >
+       
+        <img class="" src="C:\Users\govind\Desktop\PharmaPage\lab2.png" alt="">
+        <p>Selected from PharmEasy Labs (Thyrocare Powered)</p>
+    </div> -->
+
+
+
+    <button class="b1">Selected </button> <button class="b2">Remove</button><br>
+    <img class="space1 s9 " src="https://assets.pharmeasy.in/web-assets/dist/e4dcfc7b.svg" alt=""><span class="s10">Recommended By Health Experts</span>
+    
+</div >
+<div id="div2" >
+    <p id="btn1">Package Includes 8 tests</p> 
+    <!-- <p id="btn">&#8743;</p> -->
+
+
+
+<ul id="list" >
+
+    
+    <!-- <p id="list"></p> -->
+   
+    <li>Serum Electrolytes</li>
+    <li>Serum Sodium (Na)</li>
+    <li>Chloride (Cl)</li>
+    <li>BUN/Creatinine Ratio</li>
+    <li>Blood Urea Nitrogen (BUN)</li>
+    <li>Calcium (Ca)</li>
+    <li>Creatinine</li>
+    <li>Uric Acid</li>
+    <li>Serum Phosphorus (Ph)</li>
+    </ul>
+
+    
+</div>
+<span class="s1 " onclick="para()">Description </span>  <span class="s1" onclick="requirements()">Test requirements</span>
+<p id="paratext"></p>
+ </div>
+
+ 
+
+ <!-- sencond javascript div -->
+        <div>tttt</div>
+    </div>
+</body>
+</html>
+
+
+<script>
+    
+    function requirements(){
+        var type = "blood Urine";
+        var fast = "10-12 Hrs"
+        document.querySelector("#paratext").innerText=""
+
+        document.querySelector("#paratext").innerText="Sample Type "+type + "\n"+
+                "Fasting Required: "+fast ;
+                   
+                // document.querySelector("#paratext").innerText=
+                // "Fasting Required: 10-12 Hrs"              
+    }
+
+function para(){
+    document.querySelector("#paratext").innerText=""
+    document.querySelector("#paratext").innerText = "To address the current situation, now find goodness of a Health Checkup combined with Covid Antibody Test in one pack to serve both the purposes in single blood collection. Apart from Covid Antibody test, this pack helps assess essential health parameters like Thyroid, Liver, Kidney, Blood, Sugar, Cholesterol. This pack is ideally suited for individuals between 25 to 30 years of age. Covid Antibody test should NOT be used for the diagnosis or detection for COVID-19 and should ONLY be used to detect presence of Antibodies against the COVID-19 infection. If you test positive, it means you have been exposed to virus sometime back with or without your knowledge and now your body has developed antibodies to fight the infection. Any healthy individual can take this test who doesn't have Covid symptoms or hasn't come in contact with Covid affected patient in last 14 days." 
+
+
+    document.querySelector("#paratext").style.color = "#999ea2"
+    document.querySelector("#paratext").style.fontfamily = "sans,sarif"
+}
+
+
+var button1 = document.getElementById("btn1")
+button1.style.color ="#10847e"
+button1.style.cursor ="pointer"
+var list = document.getElementById("list")
+list.style.display="none";
+button1.addEventListener("click",(event)=>{
+    if(list.style.display=="none"){
+        list.style.display="block";
+    }else{
+        list.style.display="none";
+    }
+})
+
+function dropfunction(){
+ 
+
+}
+
+</script>
+
+

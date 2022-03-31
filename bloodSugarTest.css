@@ -99,6 +99,7 @@ display: flex;
     margin-left: 100px;
     color: #999ea2;
     font-size: 20px;
+    cursor: pointer;
 }
 .s1:hover{
     color: #10847e ;
