@@ -1,0 +1,117 @@
+#container{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    border: 1px solid blue;
+    display: flex;
+}
+#container>div{
+    width: 50%;
+    height: auto;
+    border: 1px solid red;
+}
+
+#div1{
+    width: 100%;
+    height: 300px;;
+    border: 1px solid black;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-family: sans-serif;
+    cursor: pointer;
+    
+
+}
+.H2{
+    color: #4f585e;
+}
+.a1{
+    background-color:#ff9341 ;
+    color: white;
+    font-weight: bold;
+}
+.heartLogo{
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.s2{
+    margin-left: 20px;
+    font-size: 25px;
+    color: #4f585e;
+
+}
+.a3{
+    margin-left: 90px;
+    margin-top: 20px;
+    font-size: 25px;
+    color: #4f585e;
+   
+}
+.a2{
+    
+    font-size: 12px;
+    text-align: center;
+
+    color: #4f585e;
+    /* color: #10847e; */
+}
+.a4{
+    text-decoration: line-through;
+    color: #4f585e;
+}
+.a5{
+    font-size: 15px;
+    color: #10847e;
+}
+
+.space1{
+    margin-left: 80px;
+}
+.s6{
+    color: #4f585e;
+   margin-left: 30px;
+}
+.b1{
+    margin-top: 30px;
+    margin-left: 80px;
+    width: 200px;
+    height: 50px;
+ background-color:    #10847e;
+color: white;
+font-size: 25px;
+cursor: pointer;
+}
+.b2{
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+ background-color:    #10847e;
+color: white;
+font-size: 25px;
+cursor: pointer;
+}
+
+.s9{
+    background-color: red;
+    margin-top: 20px;
+}
+.s10{
+    margin-left: 15px;
+    margin-bottom: 50px;
+}
+#div2{
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    margin-top: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#div2>li{
+    color: #999ea2;
+    font-size: 20px;
+}
+#div2>ul{
+    color:#10847e ;
+    font-size: 20px;
+  margin-left: -20px;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="page2.css">
+    <link rel="stylesheet" href="bloodSugarTest.css" />
+    
+</head>
+<body>
+    <div id="container">
+        <div>
+<h2 class="H2">Test Deatails</h2>
+
+<img class="img1" src="https://cms-contents-staging.pharmeasy.in/banner/1d52ece78b6-Group16361.png?dim=590x100&dpr=1&q=100" alt="">
+
+<div id="div1">
+    <span class="s3">Popular choice</span><br>
+    <img  class="FBS1 heartLogo" src="https://assets.pharmeasy.in/web-assets/dist/6b3d644c.svg" alt=""> <span class="s2">Covid-19 RTPCR (Coronavirus  SARS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CoV2)</span><br>
+    <p class="s4">Available at 1 other lab but not at PharmEasy Labs(Thyrocare powered)</p>
+    <span class="s7">&#8377 700 </span>
+    <span class="s5">onwards &nbsp;</span>
+
+    <!-- <span class="s7">&#8377 999 &nbsp;&nbsp;&nbsp;</span> <span class="s4">&#8377 2684 &nbsp;&nbsp;&nbsp;</span> <span class="s5">save 62% &nbsp;&nbsp;&nbsp;</span><br>
+    <img class="space1" src="C:\Users\govind\Desktop\PharmaPage\img5.png" alt=""><span class="s6">Selected From PharmEasy Labs(Thyrocare &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Powerd)</span> <br> -->
+    <div>
+    <button class="b1">Selected </button> <button class="b2">Remove</button><br>
+    <!-- <img class="space1 s9 " src="https://assets.pharmeasy.in/web-assets/dist/e4dcfc7b.svg" alt=""><span class="s10">Recommended By Health Experts</span> -->
+</div>
+</div >
+<div id="div2" >
+<p id="btn1">Package Includes 8 tests</p> 
+        <!-- <p id="btn">&#8743;</p> -->
+   
+    
+
+    <ul id="list" >
+   
+   
+    <li>Serum Electrolytes</li>
+    <li>Serum Sodium (Na)</li>
+    <li>Chloride (Cl)</li>
+    <li>BUN/Creatinine Ratio</li>
+    <li>Blood Urea Nitrogen (BUN)</li>
+    <li>Calcium (Ca)</li>
+    <li>Creatinine</li>
+    <li>Uric Acid</li>
+    <li>Serum Phosphorus (Ph)</li>
+   </ul>
+    
+</div>
+<div id="box">
+<p class="s1 " onclick="para()">Description </p>  <p class="s1" onclick="requirements()">Test requirements</p>  <p>&nbsp;&nbsp; </p>
+</div>
+<p id="paratext"></p>
+ </div>
+
+ 
+
+ <!-- sencond javascript div -->
+        <div>tttt</div>
+    </div>
+</body>
+</html>
+
+
+<script>
+    
+    function requirements(){
+        var type = "Throat and Nasal Swab";
+        var fast = "Not Required"
+        document.querySelector("#paratext").innerText=""
+
+        document.querySelector("#paratext").innerText="Sample Type :"+type + "\n"+
+                "Fasting Required: "+fast ;
+                   
+                // document.querySelector("#paratext").innerText=
+                // "Fasting Required: 10-12 Hrs"              
+    }
+
+function para(){
+    document.querySelector("#paratext").innerText=""
+    document.querySelector("#paratext").innerText = "The COVID-19 laboratory test can detect positive coronavirus cases. Any individual with symptoms like cough, high fever, shortness of breath, respiratory and breathing difficulties, and with a history of international travel or contact with Covid -19 positive cases, can book this test with prior consultation by General Physician. The result of this test will be informed to the relevant authorities as mandated by the government. Home sample collection will be done by an expert technician." 
+
+
+    document.querySelector("#paratext").style.color = "#4f585e"
+    document.querySelector("#paratext").style.fontfamily = "sans,sarif"
+    document.querySelector("#paratext").style.cursor = "pointer"
+    
+    
+    
+}
+
+var button1 = document.getElementById("btn1")
+button1.style.color ="#10847e"
+button1.style.cursor ="pointer"
+var list = document.getElementById("list")
+list.style.display="none";
+button1.addEventListener("click",(event)=>{
+    if(list.style.display=="none"){
+        list.style.display="block";
+    }else{
+        list.style.display="none";
+    }
+})
+
+
+function dropfunction(){
+ 
+
+}
+
+</script>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="page3.css">
+    <link rel="stylesheet" href="bloodSugarTest.css" />
+    
+</head>
+<body>
+    <div id="container">
+        <div>
+<h2 class="H2">Test Deatails</h2>
+
+<img class="img1" src="https://cms-contents-staging.pharmeasy.in/banner/1d52ece78b6-Group16361.png?dim=590x100&dpr=1&q=100" alt="">
+
+<div id="div1">
+    <span class="a1">Popular choice</span><br>
+    <img  class="FBS1 heartLogo" src="https://assets.pharmeasy.in/web-assets/dist/6b3d644c.svg" alt=""> <span class="s2">Post Prandial Blood Sugar (PPBS)</span><br>
+    <p class="a2">Available at 1 other lab but not at PharmEasy Labs(Thyrocare powered)</p>
+    <span class="a3">&#8377 199 </span>
+    <span class="a4">&#8377 500 </span>
+    <span class="a5"> &nbsp;&nbsp;&nbsp;save 60% &nbsp;&nbsp;&nbsp;</span><br>
+    <!-- <span class="s5">onwards &nbsp;</span> -->
+
+    <!-- <span class="s7">&#8377 500 &nbsp;&nbsp;&nbsp;</span> <span class="s4">&#8377 2684 &nbsp;&nbsp;&nbsp;</span> <span class="s5">save 60% &nbsp;&nbsp;&nbsp;</span><br>
+    <img class="space1" src="C:\Users\govind\Desktop\PharmaPage\img5.png" alt=""><span class="s6">Selected From PharmEasy Labs(Thyrocare &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Powerd)</span> <br> -->
+    <div>
+    <button class="b1">Selected </button> <button class="b2">Remove</button><br>
+    <!-- <img class="space1 s9 " src="https://assets.pharmeasy.in/web-assets/dist/e4dcfc7b.svg" alt=""><span class="s10">Recommended By Health Experts</span> -->
+</div>
+</div >
+<!-- <div id="div2" >
+    <p id="btn1">Package Includes 8 tests</p> 
+            <!-- <p id="btn">&#8743;</p> -->
+       
+        
+<!--     
+        <ul id="list" >
+       
+       
+        <li>Serum Electrolytes</li>
+        <li>Serum Sodium (Na)</li>
+        <li>Chloride (Cl)</li>
+        <li>BUN/Creatinine Ratio</li>
+        <li>Blood Urea Nitrogen (BUN)</li>
+        <li>Calcium (Ca)</li>
+        <li>Creatinine</li>
+        <li>Uric Acid</li>
+        <li>Serum Phosphorus (Ph)</li>
+       </ul>
+        
+    </div> --> 
+<span class="s1 " onclick="para()">Description </span>  <span class="s1" onclick="requirements()">Test requirements</span>
+<p id="paratext"></p>
+ </div>
+
+ 
+
+ <!-- sencond javascript div -->
+        <div>tttt</div>
+    </div>
+</body>
+</html>
+
+
+<script>
+    
+    function requirements(){
+        var type = "Blood ";
+        var fast = "Not Required"
+        document.querySelector("#paratext").innerText=""
+
+        document.querySelector("#paratext").innerText="Sample Type :"+type + "\n"+
+                "Fasting Required: "+fast ;
+                   
+                // document.querySelector("#paratext").innerText=
+                // "Fasting Required: 10-12 Hrs"              
+    }
+
+function para(){
+    document.querySelector("#paratext").innerText=""
+    document.querySelector("#paratext").innerText = "The blood sugar postprandial test is done two hours after you start eating your meals. It helps detect prediabetes, type 1 diabetes, type 2 diabetes and gestational diabetes. If your postprandial blood sugars are above 140-200 mg/dL, it indicates that you have diabetes mellitus. The blood sugar postprandial test is essentially a blood glucose test that helps determine your blood sugar levels after a meal. The blood sugar levels usually increase after a meal. If your pancreas functions properly and releases insulin, the blood glucose levels lower down gradually and are utilized by the body for energy. In healthy individuals, blood sugar levels usually drop back to normal levels after meals. But if you have prediabetes, diabetes or gestational diabetes, your body does not produce enough insulin or does not react to the insulin being produced. This causes your blood sugar levels to remain high and you may have high readings in the blood sugar postprandial test results. The blood sugar postprandial test is thus prescribed to diagnose diabetes or prediabetes in adults. If you are prone to diabetes, your blood sugar postprandial test results will be higher than normal, indicating prediabetes or diabetes. If you have diabetes mellitus, then the blood sugar postprandial test helps monitor your blood sugar levels. Based on the test results, your doctor can change your medicines. India is expected to have 79.4 million cases of diabetes mellitus by the year 2030. The pace at which cases of diabetes mellitus are increasing in India is alarming. More than 12.1% of urban Indian adults have diabetes mellitus. To minimise the risk factors or complications of diabetes mellitus, post-prandial blood sugar must be brought under control. This control is difficult to achieve. Regular monitoring of post-prandial blood sugar will lead to better medication and dose adjustments. Well-controlled post-prandial blood sugar will minimise the risk of cardiovascular complications due to diabetes." 
+
+
+    document.querySelector("#paratext").style.color = "#4f585e"
+    document.querySelector("#paratext").style.fontfamily = "sans,sarif"
+}
+
+
+var button1 = document.getElementById("btn1")
+button1.style.color ="#10847e"
+button1.style.cursor ="pointer"
+var list = document.getElementById("list")
+list.style.display="none";
+button1.addEventListener("click",(event)=>{
+    if(list.style.display=="none"){
+        list.style.display="block";
+    }else{
+        list.style.display="none";
+    }
+})
+
+
+function dropfunction(){
+ 
+
+}
+
+</script>
