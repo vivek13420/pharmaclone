@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <thead>
+          <tr>
+            <th>Test Name</th>
+           <th>Test Price</th>
+          </tr>
+        </thead>
+        <tbody>
+
+
+        </tbody>
+      </table>
+      <button id="btn">selectProduct </button>
+      <button id="btn1">select Test </button>
+</body>
+</html>
+<script>
+
+document.querySelector("#btn1").addEventListener("click", selectLabFun )
+    document.querySelector("#btn").addEventListener("click",mytestFun)
+
+var testArr = [
+{
+     testName :"Fasting Blood Sugar (FBS)",
+     testPrice:199,
+},
+{
+     testName :" Advanced Full Body Checkup",
+    testPrice:999,
+},
+]
+var select = JSON.parse(localStorage.getItem("selectTest"))||[]
+function mytestFun(){  
+testArr.map(function(elem,index){
+    var tr = document.createElement("tr")
+    var td1 = document.createElement("td")
+    td1.innerText = elem.testName;
+    var td2 = document.createElement("td")
+    td2.innerText = elem.testPrice
+  var   btn = document.createElement("button")
+    btn.innerText = "select"
+   btn.addEventListener("click",function(){
+       selectFn(elem)})
+
+
+   var remove = document.createElement("button")
+   remove.innerText ="remove Test"
+   remove.addEventListener("click",function(){
+       removeFn(elem,index)
+   })
+
+//    var btn = document.createElement("button")
+//     btn.innerText = "remove Cart"
+//     btn.addEventListener("click",function(){
+//         removeItem(elem,index)
+//     })
+
+   tr.append(td1,td2,btn,remove)
+   document.querySelector("tbody").append(tr)
+
+    
+})
+}
+// remove function 
+function removeFn(elem,index){
+console.log(elem,index)
+select.splice(index,1)
+localStorage.setItem("selectTest",JSON.stringify(select));
+window.location.reload();
+}
+
+// select function 
+function  selectFn(elem){
+    console.log(elem); 
+    select.push(elem)
+    localStorage.setItem("selectTest",JSON.stringify(select))
+
+}
+
+function selectLabFun(){
+    console.log('inside fun')
+    var select = JSON.parse(localStorage.getItem("selectTest"))||[]
+    console.log(select)
+}
+
+
+</script>
+
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to cart Arr </title>
+    <style>
+.btn1Class{
+    background-color: green;
+    width: 100px;
+    height: 50px;
+
+
+}
+
+
+    </style>
+</head>
+<body>
+    <table>
+   <tbody>
+
+
+   </tbody>
+
+    </table>
+</body>
+</html>
+<script>
+
+
+   var medicineArr =[
+                     {
+                         name:"Ecosprin 75mg Strip Of 14 Tablets",
+                         price:3.99,
+                         MRP : 4.86,
+                         value :"Cart Value",
+                         DeliveryCharge:99,
+                        },
+                        {
+                         name:"Shelcal 500mg Strip Of 15 Tablets",
+                         price:89.13,
+                         MRP : 4.86,
+                         value :"Cart Value",
+                         DeliveryCharge:99,
+                        },
+                        {
+                         name:"Ecosprin Av 75mg Strip Of 15 Capsules",
+                         price:45.23,
+                         MRP : 55.16,
+                         value :"Cart Value",
+                         DeliveryCharge:99,
+                        },
+                        {
+                         name:"Evion 400mg Strip Of 10 Capsules",
+                         price:28.78,
+                         MRP : 32.7,
+                         value :"Cart Value",
+                         DeliveryCharge:99,
+                        },
+                        {
+                         name:"Ecosprin 75mg Strip Of 14 Tablets",
+                         price:3.99,
+                         MRP : 4.86,
+                         value :"Cart Value",
+                         DeliveryCharge:99,
+                        },
+                        {
+                         name:"Pan 40mg Strip Of 15 Tablets ",
+                         price:122.18,
+                         MRP : 149.00
+                                       ,
+                         value :"Cart Value",
+                         DeliveryCharge:99,
+                        },
+                        
+                    ]
+
+                    var displayTable = JSON.parse(localStorage.getItem("TableDisplay"))||[]
+
+                    medicineArr.map(function(elem,index){
+                        var row = document.createElement("tr")
+                        var td1 = document.createElement("td")
+                        td1.innerText = elem.value;
+                        var td2 = document.createElement("td")
+                        td2.innerText = elem.price
+                        var btn1 = document.createElement("button")
+                        btn1.setAttribute("class","btn1Class")
+                        btn1.addEventListener("click",function(){
+                              showTable(elem,index)
+                        })
+                     row.append(td1,td2,btn1)
+                     document.querySelector("tbody").append(row)
+                    })
+
+                    function showTable(elem,index){
+                        console.log(elem)
+                        displayTable.push(elem)
+                        localStorage.setItem("TableDisplay",JSON.stringify(displayTable))
+                    }
+
+</script>
