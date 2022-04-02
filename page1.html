@@ -1,6 +1,16 @@
-
+<!-- Advanced Full Body Checkup -->
+<!-- Covid-19 RTPCR (Coronavirus  SARS -->
+<!-- Post Prandial Blood Sugar (PPBS) -->
+<!-- Fasting Blood Sugar (FBS) -->
+<!-- Advanced Full Body Checkup -->
+<!-- Advanced Full Body Checkup with Covid Antibody -->
+<!-- Advanced Renal Package -->
+<!-- Alcohol Impact Checkup -->
 
 <!--   page 1 and  page 5 is same -->
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,8 +31,8 @@
 <!-- div 1 start here -->
 <div id="div1">
     <span class="s3">Popular choice</span><br>
-    <img  class="FBS1 heartLogo" src="https://assets.pharmeasy.in/web-assets/dist/dea295a0.svg" alt=""> <span class="s2">Advanced Full Body Checkup</span><br>
-    <span class="s7">&#8377 999 &nbsp;&nbsp;&nbsp;</span> <span class="s4">&#8377 2684 &nbsp;&nbsp;&nbsp;</span> <span class="s5">save 62% &nbsp;&nbsp;&nbsp;</span><br>
+    <img  class="FBS1 heartLogo" src="https://assets.pharmeasy.in/web-assets/dist/6b3d644c.svg" alt=""> <span class="s2">Fasting Blood Sugar (FBS)</span><br>
+    <span class="s7">&#8377 199 &nbsp;&nbsp;&nbsp;</span> <span class="s4">&#8377 2684 &nbsp;&nbsp;&nbsp;</span> <span class="s5">save 62% &nbsp;&nbsp;&nbsp;</span><br>
     <div class="a6" >
         <img class="" src="C:\Users\govind\Desktop\PharmaPage\lab2.png" alt="">
         <p>Selected from PharmEasy Labs (Thyrocare Powered)</p>
@@ -30,7 +40,7 @@
 
 
 
-    <button class="b1">Selected </button> <button class="b2">Remove</button><br>
+    <button class="b1">Selected </button> <br>
     <img class="space1 s9 " src="https://assets.pharmeasy.in/web-assets/dist/e4dcfc7b.svg" alt=""><span class="s10">Recommended By Health Experts</span>
     
 </div >
@@ -150,8 +160,30 @@
 
 </div>
  <!-- sencond javascript div -->
-        <div>tttt</div>
+       <!-- sencond javascript div -->
+       <div style="width: 80%; height: auto; border: 1px solid blue;"
+       >
+        <table id="table">
+            <thead>
+              <tr>
+                <th></th>
+               <th></th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+    
+    
+            </tbody>
+          </table>
+          <!-- <button id="btn">selectProduct </button>
+          <button id="btn1">select Test </button> -->
+
+          <button style="background-color: teal; width: 90%;height: 50px;color: white;">View Cart</button>
     </div>
+    
+        
+   
+</div>
 </body>
 </html>
 
@@ -192,18 +224,101 @@ function para(){
 // })
 
 
-var button1 = document.getElementById("btn1")
-button1.style.color ="#10847e"
-button1.style.cursor ="pointer"
-var list = document.getElementById("list")
-list.style.display="none";
-button1.addEventListener("click",(event)=>{
-    if(list.style.display=="none"){
-        list.style.display="block";
-    }else{
-        list.style.display="none";
-    }
+document.querySelector(".b1").addEventListener("click",mytestfun)
+
+var   arrlabtest=JSON.parse(localStorage.getItem("labtest"))||[]
+function mytestfun(){
+    var   arrlabtest=JSON.parse(localStorage.getItem("labtest"))||[]
+var  arrlabtest= [{testname:"Advanced Full Body Checkup",Price:999},
+{testname:" Covid-19 RTPCR (Coronavirus  SARS ",Price:700},
+{testname:" Post Prandial Blood Sugar (PPBS) ",Price:199},
+{testname:" Fasting Blood Sugar (FBS) ",Price:199},
+{testname:"Advanced Full Body Checkup ",Price:999},
+{testname:"  Advanced Full Body Checkup with Covid Antibody ",Price:1299},
+{testname:" Advanced Renal Package ",Price:625},
+{testname:" Alcohol Impact Checkup ",Price:1499},
+ ]
+var a1=document.querySelector(".s2")
+arrlabtest.map(function(ele,index){
+    var tr=document.createElement("tr")
+var td1=document.createElement("td")
+var td2=document.createElement("td")
+
+
+
+if(index==3){
+   
+    td1.innerText=ele.testname
+    td1.style.fontFamily= "sans, sarif"
+td2.innerText=ele.Price
+td2.style.color = "black"
+td2.style.paddingLeft="200px"
+
+var btn10 = document.createElement("button")
+btn10.innerText = "Remove item"
+btn10.style.backgroundColor="teal";
+btn10.style.color="white";
+btn10.style.height ="50px";
+// btn10.style.borderRadius ="50px";
+btn10.addEventListener("click",function(){
+    removeItem(ele,index)
 })
+
+
+td2.setAttribute("class","td2");
+tr.append(td1,td2,btn10)
+document.querySelector("tbody").append(tr)
+}
+// document.querySelector(".b2").addEventListener("click",function(){
+//     removeitem(ele,index)
+// })
+})
+localStorage.setItem("labtest",JSON.stringify(arrlabtest))
+}
+
+function removeItem(ele, index) {
+    console.log(ele, index);
+    console.log(arrlabtest)
+    arrlabtest.splice(index, 1);
+    console.log(arrlabtest);
+    localStorage.setItem("labtest", JSON.stringify(arrlabtest));
+    window.location.reload();
+  }
+
+// body margin
+
+var table = document.querySelector("table")
+// table.style.background = "blue";
+table.style.marginTop ="130px"
+
+var  tbody = document.querySelector("tbody")
+tbody.style.background = "teal";
+tbody.style.marginTop ="100px";
+tbody.style.paddingTop ="100px";
+tbody.style.borderRadius ="100px";
+
+
+///////////
+
+  var arr2 = JSON.parse(localStorage.getItem("labtest"))
+  console.log(arr2)
+  console.log("inside fn")
+// var button1 = document.getElementById("btn1")
+// button1.style.color ="#10847e"
+// button1.style.cursor ="pointer"
+// var list = document.getElementById("list")
+// list.style.display="none";
+// button1.addEventListener("click",(event)=>{
+//     if(list.style.display=="none"){
+//         list.style.display="block";
+//     }else{
+//         list.style.display="none";
+//     }
+// })
+
+
+
+
 
 </script>
 
